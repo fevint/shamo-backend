@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Transcation extends Model
+class Transaction extends Model
 {
     use HasFactory, SoftDeletes;
 
@@ -23,6 +23,6 @@ class Transcation extends Model
         return $this->belongsTo(User::class,'users_id','id');
     }
     public function items(){
-        return $this->hasMany(TranscationItem::class,'transcations_id','id');
+        return $this->hasMany(TransactionItem::class,'transactions_id','id');
     }
 }

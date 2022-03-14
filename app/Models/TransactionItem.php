@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class TranscationItem extends Model
+class TransactionItem extends Model
 {
     use HasFactory;
 
@@ -13,7 +13,7 @@ class TranscationItem extends Model
     protected $fillable = [
         'users_id',
         'products_id',
-        'transcations_id',
+        'transactions_id',
         'quantity',  
     ];
 
